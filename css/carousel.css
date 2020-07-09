@@ -18,7 +18,7 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 2rem;
   z-index: 10;
 }
 
@@ -41,8 +41,8 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
+  margin-bottom: 0.5rem;
+  text-align: top;
 }
 .marketing h2 {
   font-weight: 400;
@@ -65,6 +65,7 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
+  text-align: top;
 }
 
 
@@ -74,9 +75,10 @@ body {
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
   .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: top;
   }
 
   .featurette-heading {
@@ -86,6 +88,6 @@ body {
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 7rem;
+    margin-top: 2rem;
   }
 }
