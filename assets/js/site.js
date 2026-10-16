@@ -23,6 +23,8 @@
     root.dataset.theme = dark ? "light" : "dark";
     try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
   });
+  // Paint mode lives in its own module and loads only when asked for.
+  $(".magic-toggle").addEventListener("click", () => import("./magic.js").then((m) => m.toggle()));
   $("#yr").textContent = new Date().getFullYear();
 
   const loadYaml = (u) => fetch(u, { cache: "no-cache" }).then((r) => (r.ok ? r.text() : "")).then((t) => (t ? jsyaml.load(t) : null));
