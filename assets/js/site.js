@@ -23,8 +23,14 @@
     root.dataset.theme = dark ? "light" : "dark";
     try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
   });
-  // Paint mode lives in its own module and loads only when asked for.
-  $(".magic-toggle").addEventListener("click", () => import("./magic.js").then((m) => m.toggle()));
+  // Paint and city modes live in their own modules and load only when asked for. One at a time.
+  const modes = {};
+  document.querySelectorAll("[data-mode]").forEach((b) => b.addEventListener("click", async () => {
+    const name = b.dataset.mode;
+    for (const [n, m] of Object.entries(modes)) if (n !== name && m.isActive()) m.exit();
+    modes[name] ||= await import(`./${name}.js`);
+    modes[name].toggle();
+  }));
   $("#yr").textContent = new Date().getFullYear();
 
   const loadYaml = (u) => fetch(u, { cache: "no-cache" }).then((r) => (r.ok ? r.text() : "")).then((t) => (t ? jsyaml.load(t) : null));

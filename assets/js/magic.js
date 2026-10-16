@@ -21,6 +21,7 @@ let ui, painter, active = false, current = null;
 const homes = new Map(); // section id -> { el, parent, next } so moved content can go back
 
 // ------------------------------------------------------------------ public API
+export const isActive = () => active;
 export async function toggle() {
   active ? exit() : await enter();
 }
@@ -38,7 +39,7 @@ async function enter() {
   painter?.start();
 }
 
-function exit() {
+export function exit() {
   active = false;
   closePanel(true);
   document.documentElement.classList.remove("magic-on");

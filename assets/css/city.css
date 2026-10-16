@@ -1,0 +1,108 @@
+/* City mode (assets/js/city.js). Loaded only when city mode is first switched on. */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600&display=swap");
+
+.city-on body { overflow: hidden; }
+.city-on .nav { z-index: 40; background: transparent; border-bottom-color: transparent; backdrop-filter: none; }
+.city-on .nav nav { visibility: hidden; }
+.city-on .brand { color: #e9f2ff; }
+.city-on .theme-toggle, .city-on .magic-toggle { background: #0b1022; border-color: #1d2747; color: #9fb0cc; }
+
+.city { --c: #00e5ff; --hud: "Chakra Petch", "Inter", sans-serif; position: fixed; inset: 0; z-index: 30; background: #04060e;
+  color: #e9f2ff; opacity: 0; transition: opacity .4s ease; color-scheme: dark; }
+.city.shown { opacity: 1; }
+.city[hidden] { display: none; }
+.city-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
+.city.loading::after { content: "Building the city…"; position: absolute; inset: 0; display: grid; place-items: center;
+  font: 600 15px var(--hud); letter-spacing: .2em; text-transform: uppercase; color: #7fe8ff; animation: city-blink 1s infinite alternate; }
+.city.no-gl::after { content: "City mode needs WebGL, which this browser doesn't provide."; position: absolute; inset: 0;
+  display: grid; place-items: center; font: 500 15px var(--hud); color: #9fb0cc; padding: 24px; text-align: center; }
+@keyframes city-blink { from { opacity: .4; } to { opacity: 1; } }
+
+.city-hud { position: absolute; left: 50%; top: 18px; transform: translateX(-50%); display: grid; justify-items: center; gap: 2px;
+  font: 600 12px var(--hud); letter-spacing: .28em; text-transform: uppercase; color: #7fe8ff; pointer-events: none;
+  text-shadow: 0 0 10px #00e5ff88; transition: opacity .4s; }
+.city-hint { font-weight: 500; letter-spacing: .12em; color: #9fb0cc; text-shadow: none; font-size: 11.5px; }
+.city.open .city-hud, .city.busy .city-hud { opacity: 0; }
+@media (max-width: 640px) { .city-hud { top: 64px; } }
+
+/* Destination bar */
+.city-dest { position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%); display: flex; gap: 8px; padding: 8px;
+  max-width: calc(100vw - 24px); overflow-x: auto; scrollbar-width: none;
+  background: rgba(6, 10, 24, .72); border: 1px solid #1d2747; border-radius: 16px; backdrop-filter: blur(10px);
+  transition: opacity .4s, transform .4s; }
+.city-dest button { --c: #00e5ff; display: grid; gap: 1px; text-align: left; padding: 8px 14px; border-radius: 10px; cursor: pointer;
+  background: transparent; border: 1px solid color-mix(in srgb, var(--c) 35%, transparent); color: #e9f2ff; white-space: nowrap;
+  font-family: var(--hud); transition: background .2s, box-shadow .2s, border-color .2s; }
+.city-dest b { font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--c); }
+.city-dest small { font-size: 11px; color: #8d9bbb; letter-spacing: .04em; }
+.city-dest button:hover, .city-dest button:focus-visible { outline: none; border-color: var(--c);
+  background: color-mix(in srgb, var(--c) 12%, transparent); box-shadow: 0 0 18px -4px var(--c); }
+.city-dest button[aria-current="true"] { background: color-mix(in srgb, var(--c) 22%, transparent); border-color: var(--c);
+  box-shadow: 0 0 22px -4px var(--c), inset 0 0 12px -6px var(--c); }
+.city.busy .city-dest { opacity: .55; pointer-events: none; }
+@media (min-width: 820px) { .city.open .city-dest { left: calc((100vw - min(600px, 46vw) - 24px) / 2); } }
+@media (max-width: 819px) {
+  .city-dest small { display: none; }
+  .city-dest button { padding: 7px 11px; }
+  .city.open .city-dest { opacity: 0; pointer-events: none; transform: translateX(-50%) translateY(20px); }
+}
+
+/* The panel that opens at the landmark */
+.city-panel { --c: #00e5ff; position: absolute; right: 16px; top: 72px; max-height: calc(100% - 90px); width: min(600px, 46vw); overflow: auto;
+  overscroll-behavior: contain; outline: none; border-radius: 6px;
+  background: linear-gradient(180deg, rgba(10, 16, 34, .92), rgba(5, 8, 20, .9));
+  border: 1px solid color-mix(in srgb, var(--c) 55%, transparent);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .6), 0 0 40px -8px color-mix(in srgb, var(--c) 70%, transparent), inset 0 0 60px -30px var(--c);
+  backdrop-filter: blur(12px);
+  /* Re-skin the regular site's components for the night */
+  --bg: #050814; --bg-alt: #0a0f1f; --surface: rgba(16, 24, 48, .72); --text: #e9f2ff; --muted: #a6b4cf; --faint: #74839f;
+  --line: rgba(120, 160, 255, .18); --accent: var(--c); --accent-soft: color-mix(in srgb, var(--c) 16%, transparent);
+  --accent-text: var(--c); --code: #5fffc0; --code-soft: rgba(95, 255, 192, .12); --shadow: none; color: var(--text); }
+.city-panel[hidden] { display: none; }
+.city-panel::before { content: ""; position: sticky; top: 0; display: block; height: 0; z-index: 2; }
+.city-panel.boot { animation: city-boot .75s cubic-bezier(.2, .9, .2, 1) both; }
+.city-panel.boot .city-panel-body { animation: city-fade .6s .35s ease both; }
+@keyframes city-boot {
+  0% { clip-path: inset(49.5% 0 49.5% 0); opacity: 0; }
+  35% { clip-path: inset(49.5% 0 49.5% 0); opacity: 1; }
+  100% { clip-path: inset(0 0 0 0); opacity: 1; }
+}
+@keyframes city-fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (max-width: 819px) {
+  .city-panel { left: 12px; right: 12px; top: auto; bottom: 12px; max-height: calc(56vh - 24px); width: auto; }
+}
+
+.city-panel-head { position: sticky; top: 0; z-index: 3; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px 16px; background: rgba(5, 8, 20, .88); backdrop-filter: blur(8px);
+  border-bottom: 1px solid color-mix(in srgb, var(--c) 30%, transparent); }
+.city-arrived { font: 600 12px var(--hud, "Chakra Petch"), sans-serif; letter-spacing: .2em; text-transform: uppercase; color: var(--c);
+  text-shadow: 0 0 10px var(--c); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.city-back { flex: none; font: 600 13px "Chakra Petch", sans-serif; letter-spacing: .06em; color: #04060e; background: var(--c);
+  border: 0; border-radius: 4px; padding: 7px 12px; cursor: pointer; box-shadow: 0 0 16px -2px var(--c); }
+.city-back:hover { filter: brightness(1.15); }
+.city-panel-body { padding: 22px 0 28px; }
+.city-panel .wrap, .city-panel .hero-text { padding: 0 20px; }
+.city-panel h1, .city-panel h2 { font-family: "Chakra Petch", var(--sans); font-weight: 600; letter-spacing: .02em; }
+.city-panel .section-head h2, .city-panel .contact h2, .city-panel .hero-text h1 {
+  font-size: clamp(30px, 3.4vw, 40px); color: #fff; text-shadow: 0 0 18px color-mix(in srgb, var(--c) 70%, transparent); }
+.city-panel .hero-text h1 { margin-bottom: 8px; }
+.city-panel .themes { grid-template-columns: 1fr; }
+.city-panel .theme, .city-panel .pub, .city-panel .course, .city-panel .chip, .city-panel input, .city-panel select, .city-panel .btn,
+.city-panel .pi-links a { background: rgba(16, 24, 48, .7); border-color: rgba(120, 160, 255, .2); color: var(--text); }
+.city-panel .chip[aria-pressed="true"] { background: var(--c); color: #04060e; border-color: var(--c); }
+.city-panel .pub-fig { background: #fff; }
+.city-panel .pub { grid-template-columns: 1fr; }
+
+/* Leader line from the landmark to the panel */
+.city-leader { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0; transition: opacity .3s;
+  overflow: visible; filter: drop-shadow(0 0 4px var(--c)); }
+.city-leader polyline { stroke: var(--c); stroke-width: 1.5; stroke-dasharray: 6 4; animation: city-dash 1s linear infinite; }
+.city-leader circle { fill: var(--c); }
+.city-leader .ping { fill: none; stroke: var(--c); stroke-width: 1.5; transform-box: fill-box; transform-origin: center;
+  animation: city-ping 1.6s ease-out infinite; }
+@keyframes city-dash { to { stroke-dashoffset: -20; } }
+@keyframes city-ping { from { transform: scale(1); opacity: 1; } to { transform: scale(4); opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .city-panel.boot, .city-panel.boot .city-panel-body, .city-leader polyline, .city-leader .ping, .city.loading::after { animation: none; }
+}
