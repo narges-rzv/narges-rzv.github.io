@@ -1,0 +1,48 @@
+name: Update publications
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"   # every Monday 06:17 UTC
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "normal = new papers only; refresh = redo everything"
+        default: normal
+        type: choice
+        options: [normal, refresh]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-publications
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - run: pip install -r scripts/requirements.txt
+
+      - name: Sync publications from Google Scholar
+        run: |
+          case "${{ inputs.mode }}" in
+            refresh) python scripts/update_publications.py --refresh ;;
+            *) python scripts/update_publications.py ;;
+          esac
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data assets/pubs
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Update publications from Google Scholar"
+          git push

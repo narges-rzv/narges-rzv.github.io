@@ -1,572 +1,110 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="imgs/favicon.png">
-
-    <title>Razavian Research Group</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-    <style>
-      .contact-links {
-        color: white;
-      }
-
-      .contact-links:hover {
-        color: orange;
-      }
-
-      .heading-link, .heading-link:visited {
-        color: black;
-      }
-
-      .heading-link:hover, .heading-link:hover .heading-link-i {
-        color: darkgray;
-        text-decoration: none;
-      }
-
-      .heading-link-i {
-        font-size: 0.6em;
-        color: white;
-        display: inline-block;
-        vertical-align: middle;
-      }
-
-      .blackfont {
-        color: black;
-        filter: drop-shadow(0 0 10px white) drop-shadow(0 0 10px white) drop-shadow(0 0 10px white);
-      }
-
-      .blackarrow {
-        filter: drop-shadow(0 0 10px black) invert(100%);
-      }
-
-      .profilepic {
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: inline-block;
-      }
-    </style>
-  </head>
-  <body>
-
-    <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Razavian Lab</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#group_members"> Group Members <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#research"> Research <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#publications"> Publications <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#software"> Software <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#teachings"> Teachings <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#openings"> Open Positions (hiring pause at NYUMC right now) <span class="sr-only">(current)</span></a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li> -->
-          </ul>
-          <!-- <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Razavian Lab · NYU Langone</title>
+  <meta name="description" content="Razavian Lab at NYU Grossman School of Medicine: machine learning for medicine — EHR, medical imaging, clinical NLP and medical foundation models.">
+  <meta property="og:title" content="Razavian Lab · NYU Langone">
+  <meta property="og:description" content="Machine learning for medicine — EHR, medical imaging, clinical NLP and medical foundation models.">
+  <meta property="og:image" content="https://razavian.net/imgs/narges.jpeg">
+  <link rel="icon" href="imgs/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span><span data-bind="lab_name">Razavian Lab</span></a>
+      <nav aria-label="Sections">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
       </nav>
-    </header>
-
-    <main role="main">
-      <div id="narges-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
-        <ol class="carousel-indicators">
-          <li data-target="#narges-carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#narges-carousel" data-slide-to="1"></li>
-          <li data-target="#narges-carousel" data-slide-to="2"></li>
-          <li data-target="#narges-carousel" data-slide-to="3"></li>
-          <li data-target="#narges-carousel" data-slide-to="4"></li>
-          <li data-target="#narges-carousel" data-slide-to="5"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="first-slide" src="imgs/Narges_2.jpg" style="overflow:hidden; width:100%; height:auto;"> <!--alt="First slide"-->
-            <div class="container">
-              <div class="carousel-caption text-left">
-                <h1>Narges Razavian</h1>
-                <p>Assistant Professor (Research)</p>
-                <p>Predictive Analytics Unit</p>
-                <p>Center for Healthcare Innovation and Delivery Sciences</p>
-                <p>New York University Langone Medical Center</p>
-                <p>
-                  <a href="mailto:narges.razavian@nyumc.org"><i class="fas fa-envelope-square fa-3x contact-links"></i></a>
-                  <a href="https://github.com/NYUMedML/"><i class="fab fa-github-square fa-3x contact-links"></i></a>
-                  <a href="https://www.linkedin.com/in/narges-razavian-512b7635/"><i class="fab fa-linkedin fa-3x contact-links"></i></a>
-                  <a href="https://twitter.com/narges_razavian/"><i class="fab fa-twitter-square fa-3x contact-links"></i></a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <!-- <img class="third-slide" src="imgs/f6.png" style="overflow:hidden; width:auto; height:100%"> -->
-            <div class="container">
-              <div class="carousel-caption text-left">
-                <div class="blackfont">
-                  <h1>Electronic Health Records and AI</h1>
-                  <p>Recent Publications:
-                    <br>
-                    <br>Graph Neural Network on Electronic Health Records for Predicting Alzheimer's Disease
-                    <br>W Zhu, N Razavian
-                    <br>arXiv preprint arXiv:1912.03761
-                    <br>
-                    <br>Towards Quantification of Bias in Machine Learning for Healthcare: A Case Study of Renal Failure Prediction
-                    <br>J Williams, N Razavian
-                    <br>arXiv preprint arXiv:1911.07679
-                    <br>
-                    <br>Artificial intelligence and cancer
-                    <br>O Troyanskaya, Z Trajanoski, A Carpenter, S Thrun, N Razavian, N Oliver
-                    <br>Nature Cancer 1 (2), 149-152
-                    <br>
-                    <br>Predicting childhood obesity using electronic health records and publicly available data
-                    <br>R Hammond, R Athanasiadou, S Curado, Y Aphinyanaphongs, C Abrams, ...
-                    <br>PloS one 14 (4), e0215571
-                    <br>
-
-                </div>
-                <p><a class="btn btn-lg btn-primary" href="#ehr" role="button">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <!-- <img class="fourth-slide" src="imgs/fp1.png" style="overflow:hidden; width:100%; height:auto;"> -->
-            <div class="container">
-              <div class="carousel-caption text-left">
-                <div class="blackfont">
-                  <h1>Natural Language Processing for Clinical Notes</h1>
-                  <p> Recent Publications:
-                    <br>
-                    <br>BERT-XML: Large Scale Automated ICD Coding Using BERT Pretraining
-                    <br>Z Zhang, J Liu, N Razavian
-                    <br>arXiv preprint arXiv:2006.03685
-                    <br>
-                    <br>Tracing State-Level Obesity Prevalence from Sentence Embeddings of Tweets: A Feasibility Study
-                    <br>X Zhang, R Athanasiadou, N Razavian
-                    <br>arXiv preprint arXiv:1911.11324
-                    <br>
-                    <br>Deep ehr: Chronic disease prediction using medical notes
-                    <br>J Liu, Z Zhang, N Razavian
-                    <br>Machine Learning for Healthcare 2018
-                    <br>arXiv preprint arXiv:1808.04928
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                  <p><a class="btn btn-lg btn-primary" href="#nlp" role="button">Learn more</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <!-- <img class="fifth-slide" src="imgs/brain.png" style="overflow:hidden; width:auto; height:auto"> -->
-            <div class="container">
-              <div class="carousel-caption text-left">
-                <div class="blackfont">
-                  <h1>Deep Learning for Brain MRI</h1>
-                  <h2></h2>
-                  <p>Recent Publications:
-                    <br>
-                    <br>S Liu, J Niles-Weed, N Razavian, C Fernandez-Granda
-                    <br>Early-Learning Regularization Prevents Memorization of Noisy Labels
-                    <br>arXiv preprint arXiv:2007.00151
-                    <br>
-                    <br>On the design of convolutional neural networks for automatic detection of Alzheimer’s disease
-                    <br>S Liu, C Yadav, C Fernandez-Granda, N Razavian
-                    <br>Machine Learning for Health Workshop, 184-201
-                    <br>
-                    <br>DARTS: DenseUnet-based Automatic Rapid Tool for brain Segmentation
-                    <br>A Kaku, CV Hegde, J Huang, S Chung, X Wang, M Young, YW Lui, ...
-                    <br> arXiv preprint arXiv:1911.05567
-                    <br>
-                    <br>State of the art: machine learning applications in glioma imaging
-                    <br>E Lotan, R Jain, N Razavian, GM Fatterpekar, YW Lui
-                    <br>American Journal of Roentgenology 212 (1), 26-37
-                  </p>
-                </div>
-                <p><a class="btn btn-lg btn-primary" href="#ehr" role="button">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <!-- <img class="second-slide" src="imgs/patho.jpg" style="overflow:hidden; height:100%; width:auto;"> -->
-            <div class="container">
-              <div class="carousel-caption text-left">
-              <div class="blackfont">
-                <h1>Deep Learning for Histopathology</h2>
-                <p> Recent Publication:
-                  <br>
-                  <br>Predicting Endometrial Cancer Subtypes and Molecular Features from Histopathology
-                  <br>Images Using Multi-resolution Deep Learning Models
-                  <br>R Hong, W Liu, D DeLair, N Razavian, D Fenyö
-                  <br>bioRxiv https://doi.org/10.1101/2020.02.25.965038
-                  <br>
-                  <br>Classification and mutation prediction from non–small cell lung cancer histopathology images using deep learning
-                  <br>N Coudray, PS Ocampo, T Sakellaropoulos, N Narula, M Snuderl, ...
-                  <br>Nature medicine 24 (10), 1559-1567
-                  <br>
-                  <br>Efficient pan-cancer whole-slide image classification and outlier detection using convolutional neural networks
-                  <br>S Bilaloglu, J Wu, E Fierro, RD Sanchez, PS Ocampo, N Razavian, ...
-                  <br>bioRxiv, 633123
-                  <br>
-                  <br>A deep learning approach for rapid mutational screening in melanoma
-                  <br>RH Kim, S Nomikou, Z Dawood, G Jour, D Donnelly, U Moran, JS Weber, ...
-                  <br>bioRxiv, 610311
-                <p><a class="btn btn-lg btn-primary" href="#imaging" role="button">Learn more</a></p>
-              </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <a class="carousel-control-prev blackarrow" href="#narges-carousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next blackarrow" href="#narges-carousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-
-      <div class="container marketing">
-        <div class="row justify-content-md-center">
-          <div class="col-md-auto">
-            <a href="#group_members" class="heading-link">
-              <h2 class="display-4"><i class="fa fa-link heading-link-i" aria-hidden="true"></i> Group Members</h2>
-            </a>
-          </div>
-        </div>
-        <hr class="featurette-divider" id="group_members">
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-          <div class="col-lg-4">
-            <!-- <img class="rounded-circle" src="imgs/sheng.png" width="140" height="140"> -->
-            <img class="rounded-circle" src="imgs/sheng.png" width="140" height="140">
-            <h2>Sheng Liu</h2>
-            <p>PhD Student, NYU Center for Data Science</p>
-            <p>Co-advised by Dr. Carlos Fernandez-Granda</p>
-            <p>Research: Robust Deep Learning for Medical Imaging</p>
-            <p><a class="btn btn-secondary" href="https://shengliu66.github.io/" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="imgs/aakash.jpeg" width="140" height="140">
-            <h2>Aakash Kaku</h2>
-            <p>PhD student, Center for Data Science, NYU</p>
-            <p>Co-advised by Dr. Carlos Fernandez-Granda</p>
-            <p>Research: Generalizable Deep Learning for Brain Segmentation</p>
-            <p><a class="btn btn-secondary" href="https://github.com/aakashrkaku" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="imgs/jack.jpeg" width="140" height="140">
-            <h2>Weicheng (Jack) Zhu</h2>
-            <p>Incoming PhD student, Center for Data Science, NYU</p>
-            <p>Research: Graph Representation Learning on EHR</p>
-            <p><a class="btn btn-secondary" href="https://github.com/jackzhu727" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-        <div class="row">
-        </div>
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-lg-4">
-          <h2>Masters Students</h2>
-          <br>Fanghao Zhong
-          <br>Amy Ma
-          <br>Xiaocheng Li
-          <br>Sam Falk
-          <br>B V Nithish Addepalli
-          <br>Raghav Jajodia
-          <br>Dustin Godevais
-        </div>
-        <div class="col-lg-4">
-          <h2>On PhD Committee Of</h2>
-          <br>Vincent Major
-          <br>Runyu Hong
-          <br>Sofia Nomikou
-          <br>Ji Chen
-          <br>Neil Jethani
-          <br>
-        </div>
-        <div class="col-lg-4">
-          <h2>Collaborators</h2>
-          <br>Nicolas Coudray
-          <br>Seda Bilaloglu
-          <br>Walter Wang
-          <br>
-        </div>
-        <div class="col-lg-4">
-          <h2>Alumni</h2>
-          <br>Hui Wei
-            <br>Xiaoyi Zhang
-            <br>Chhavi Yadav
-            <br>Chaitra Hegde
-            <br>Josie Williams
-            <br>Jingshu Liu
-            <br>Zachariah Zhang
-            <br>Xianzhi (Viola) Cao
-            <br>Shaivi Kochar
-            <br>Jun Chen
-            <br>Ellim Kim
-            <br>Rob Hammond
-            <br>Anant Gupta
-            <br>Arun Kodnani
-            <br>Ayush Sethi
-            <br>Saumitra Thakur
-        </div>
-        </div>
-
-
-        <!-- START THE FEATURETTES -->
-        <hr class="featurette-divider">
-        <div class="row featurette" id="research">
-          <div class="col-md-12" id="imaging">
-            <h2 class="featurette-heading">Deep Learning for Brain MRI</h2>
-            <p class="lead">In collaboration with NYU Radiology and Alzheimer's Research Center, we work on deep learning modeling of T1W brain MRIs.</p>
-            <p> Our relevant publications include<br>
-              <br>S Liu, J Niles-Weed, N Razavian, C Fernandez-Granda
-              <br>Early-Learning Regularization Prevents Memorization of Noisy Labels
-              <br>arXiv preprint arXiv:2007.00151 <a href="https://arxiv.org/abs/2007.00151">[paper]</a> <a href="https://github.com/shengliu66/ELR">[code]</a>
-              <br>Under review
-              <br>
-              <br>On the design of convolutional neural networks for automatic detection of Alzheimer’s disease
-              <br>S Liu, C Yadav, C Fernandez-Granda, N Razavian
-              <br>Neurips 2019 Machine Learning for Health Workshop, 184-201 <a href="https://arxiv.org/abs/1911.03740">[paper]</a> <a href="https://github.com/NYUMedML/CNN_design_for_AD">[code]</a>
-              <br>
-              <br>DARTS: DenseUnet-based Automatic Rapid Tool for brain Segmentation
-              <br>A Kaku, CV Hegde, J Huang, S Chung, X Wang, M Young, YW Lui, N Razavian
-              <br>arXiv preprint arXiv:1911.05567 <a href="https://arxiv.org/abs/1911.05567"></a> <a href="https://github.com/NYUMedML/DARTS">[code]</a>
-              <br>Under review
-              <br>
-              <br>Artificial Intelligence Explained for Nonexperts
-              <br>N Razavian, F Knoll, KJ Geras
-              <br>Seminars in Musculoskeletal Radiology 24 (01), 003-011 <a href="https://www.thieme-connect.com/products/ejournals/pdf/10.1055/s-0039-3401041.pdf">[paper]</a>
-              <br>
-              <br>Using Brain MRI Images to Predict Memory, BMI and Age
-              <br>C Yadav, N Razavian
-              <br>2019 IEEE International Conference on Humanized Computing and Communication
-              <br>
-              <br>State of the art: machine learning applications in glioma imaging
-              <br>E Lotan, R Jain, N Razavian, GM Fatterpekar, YW Lui
-              <br>American Journal of Roentgenology 212 (1), 26-37 <a href="https://www.ajronline.org/doi/10.2214/AJR.18.20218?mobileUi=0">[paper]</a>
-            <br>
-            </p>
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-        <div class="row featurette" id="ehr">
-          <div class="col-md-12">
-            <h2 class="featurette-heading">Electronic Health Records and AI</h2>
-            <p class="lead">As part of NYU Predictive Analytics Unit, we continuously focus on improving detection of undiagnosed diseases and early prediction of preventable diseases.  </p>
-              <p>For this purpose, we build models of patient time series of electronic health records, which includes labs, medications, disease history, procedures and clinical notes. We build deep learning and standard machine learning models. Our deep learning efforts involve graph neural networks. </p>
-              <br>
-            <p>Our related publications include<br>
-              <br>Graph Neural Network on Electronic Health Records for Predicting Alzheimer's Disease
-              <br>W Zhu, N Razavian
-              <br>arXiv preprint arXiv:1912.03761 <a href="https://arxiv.org/abs/1912.03761">[paper]</a> <a href="https://github.com/NYUMedML/GNN_for_EHR">[code]</a>
-              <br>
-              <br>Towards Quantification of Bias in Machine Learning for Healthcare: A Case Study of Renal Failure Prediction
-              <br>J Williams, N Razavian
-              <br>arXiv preprint arXiv:1911.07679 <a href="https://arxiv.org/abs/1911.07679">[paper]</a>
-              <br>Presented at Neurips Workshop on Faireness in Machine Learning in Health 2019
-              <br>
-              <br>Artificial intelligence and cancer
-              <br>O Troyanskaya, Z Trajanoski, A Carpenter, S Thrun, N Razavian, N Oliver
-              <br>Nature Cancer 1 (2), 149-152 <a href="https://www.nature.com/articles/s43018-020-0034-6">[paper]</a>
-              <br>
-              <br>Predicting childhood obesity using electronic health records and publicly available data
-              <br>R Hammond, R Athanasiadou, S Curado, Y Aphinyanaphongs, C Abrams, M Messito, R Gross, M Katzow, M Jay, N Razavian, B Elbel
-              <br>PloS one 14 (4), e0215571 <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0215571">[paper]</a> <a href="https://github.com/NYUMedML/ObesityPY">[code]</a>
-              <br>
-              <br>Deep ehr: Chronic disease prediction using medical notes
-              <br>J Liu, Z Zhang, N Razavian
-              <br>arXiv preprint arXiv:1808.04928 <a href="https://arxiv.org/abs/1808.04928">[paper]</a> <a href="https://github.com/NYUMedML/DeepEHR">[code]</a>
-              <br>
-              <br>Multi-task prediction of disease onsets from longitudinal laboratory tests
-              <br>N Razavian, J Marcus, D Sontag
-              <br>Machine Learning for Healthcare Conference, 73-100 <a href="http://proceedings.mlr.press/v56/Razavian16.pdf">[paper]</a> <a href="https://github.com/clinicalml/deepDiagnosis">[code]</a>
-              <br>
-              <br>Temporal convolutional neural networks for diagnosis from lab tests
-              <br>N Razavian, D Sontag
-              <br>arXiv preprint arXiv:1511.07938 <a href="https://arxiv.org/abs/1511.07938">[paper]</a> <a href="https://github.com/clinicalml/deepDiagnosis">[code]</a>
-              <br>ICLR Workshop 2016
-              <br>
-              <br>Population-level prediction of type 2 diabetes from claims data and analysis of risk factors
-              <br>N Razavian, S Blecker, AM Schmidt, A Smith-McLallen, S Nigam, D Sontag
-              <br>Big Data 3 (4), 277-287 <a href="https://www.liebertpub.com/doi/full/10.1089/BIG.2015.0020">[paper]</a>
-              <br>
-              <br>Visual Exploration of Temporal Data in Electronic Medical Records.
-              <br>J Krause, N Razavian, E Bertini, DA Sontag
-              <br>AMIA 2015 <a href="https://josuakrause.github.io/info/material/amia_2015_poster.pdf">[poster]</a> <a href="https://github.com/nyuvis/patient-viz">[code]</a>
-              </p>
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-        <div class="row featurette" id="nlp">
-          <div class="col-md-12">
-            <h2 class="featurette-heading">Natural Language Processing for Clinical Notes</h2>
-            <p class="lead">As part of our research on predicting preventable conditions, we are building various NLP models to parse the knowledge written in clinical notes. </p>
-             <p>Our relevant publications include:
-              <br>
-                <br>BERT-XML: Large Scale Automated ICD Coding Using BERT Pretraining
-                <br>Z Zhang, J Liu, N Razavian
-                <br>arXiv preprint arXiv:2006.03685 <a href="https://arxiv.org/abs/2006.03685">[paper]</a>
-                <br>
-                <br>Tracing State-Level Obesity Prevalence from Sentence Embeddings of Tweets: A Feasibility Study
-                <br>X Zhang, R Athanasiadou, N Razavian
-                <br>arXiv preprint arXiv:1911.11324 <a href="https://arxiv.org/abs/1911.11324">[paper]</a>
-                <br>Under review
-                <br>
-                <br>Deep ehr: Chronic disease prediction using medical notes
-                <br>J Liu, Z Zhang, N Razavian
-                <br>Machine Learning for Healthcare 2018
-                <br>arXiv preprint arXiv:1808.04928 <a href="https://arxiv.org/abs/1808.04928">[paper]</a> <a href="https://github.com/NYUMedML/DeepEHR">[code]</a>
-                <br>
-              </p>
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-        <div class="row featurette" id="nlp">
-          <div class="col-md-12">
-            <h2 class="featurette-heading">Deep Learning for Histology and Biomedical Imaging</h2>
-              <p> Our group collaborates with NYU Systems Genetics Department to derive deep learning solutions for cancer histology, and microscopy.
-              <br>
-              <br>Predicting Endometrial Cancer Subtypes and Molecular Features from Histopathology
-              <br>Images Using Multi-resolution Deep Learning Models
-              <br>R Hong, W Liu, D DeLair, N Razavian, D Fenyö
-              <br>bioRxiv <a href="https://doi.org/10.1101/2020.02.25.965038">[paper]</a>
-              <br>
-              <br>Classification and mutation prediction from non–small cell lung cancer histopathology images using deep learning
-              <br>N Coudray, PS Ocampo, T Sakellaropoulos, N Narula, M Snuderl, D Fenyö, A Moreira, N Razavian, A Tsirigos
-              <br>Nature medicine 24 (10), 1559-1567 <a href="https://www.nature.com/articles/s41591-018-0177-5?sf197831152=1">[paper]</a> <a href="https://github.com/ncoudray/DeepPATH">[code]</a>
-              <br>
-              <br>Efficient pan-cancer whole-slide image classification and outlier detection using convolutional neural networks
-              <br>S Bilaloglu, J Wu, E Fierro, RD Sanchez, PS Ocampo, N Razavian, N Coudray, A Tsirigos
-              <br>bioRxiv, 633123 <a href="https://www.biorxiv.org/content/10.1101/633123v1.abstract">[paper]</a>
-              <br>
-              <br>A deep learning approach for rapid mutational screening in melanoma
-              <br>RH Kim, S Nomikou, Z Dawood, G Jour, D Donnelly, U Moran, JS Weber, N Razavian, M Snuderl, R Shapiro, R Berman, N Coudray, I Osman, A Tsirigos
-              <br>bioRxiv, 610311 <a href="https://www.biorxiv.org/content/10.1101/610311v1.abstract">[paper]</a>
-            </p>
-          </div>
-        </div>
-
-        <hr class="featurette-divider">
-        <div class="row featurette" id="publications">
-          <div class="col-md-12">
-           <h2 class="featurette-heading">Publications</h2>
-          <br>For an updated list please refer to the link below
-          <br><a href="https://scholar.google.com/citations?hl=en&user=lr1JM5MAAAAJ">https://scholar.google.com/citations?hl=en&user=lr1JM5MAAAAJ</a>
-
-          </div>
-        </div>
-
-      <hr class="featurette-divider">
-        <div class="row featurette" id="software">
-          <div class="col-md-12">
-           <h2 class="featurette-heading">Software</h2>
-          <br>For an updated list please refer to the link below
-          <br><a href="https://github.com/NYUMedML">https://github.com/NYUMedML</a>
-          <br>We are working on a more organized effort for our tool management. Stay tuned.
-          </div>
-        </div>
-
-
-
-      <hr class="featurette-divider">
-      <div class="row featurette" id="teachings">
-        <div class="col-md-12">
-          <h2> Teachings </h2>
-          <p class="lead"> Spring 2020 - Deep Learning in Medicine (BMSC-GA 4493, BMIN-GA 3007)</p>
-          <p> Link to the <a href='https://docs.google.com/document/d/1PwTVpYIVYEilZKLCt8dNin8rd-EtpLv20EjLFyFNFaM/edit?usp=sharing'>class syllabus</a></p>
-          <p> Link to the class github page: <a href='https://github.com/nyumc-dl/BMSC-GA-4493-Spring2020'>https://github.com/nyumc-dl/BMSC-GA-4493-Spring2020</a></p>
-          <br>
-          <p class="lead"> Spring 2019 - Deep Learning in Medicine (BMSC-GA 4493, BMIN-GA 3007)</p>
-          <p> Link to the <a href='https://t.co/O1N4QGmo3n'>class syllabus</a></p>
-          <p> Link to the class github page: <a href='https://github.com/nyumc-dl/BMSC-GA-4493-Spring2019'>https://github.com/nyumc-dl/BMSC-GA-4493-Spring2019</a></p>
-          <br>
-          <p class="lead"> Spring 2018 - Deep Learning in Medicine (BMSC-GA 4493, BMIN-GA 3007)</p>
-          <p> Link to the <a href='class_dlmed.html'>class syllabus</a></p>
-          <p> Link to the class github page: <a href='https://github.com/nyumc-dl/BMSC-GA-4493-Spring2018'>https://github.com/nyumc-dl/BMSC-GA-4493-Spring2018</a></p>
-         </div>
-
-      </div>
-
-      <hr class="featurette-divider">
-      <div class="row featurette" id="openings">
-        <div class="col-md-12">
-          <h2> Open Positions </h2>
-          <p> Due to COVID-19, we are not currently allowed to hire.
-            <br> However, Graduate students from NYU Sackler and NYU Center for Data Science can work with us.
-            <br> For admissions information please follow <a href="https://cds.nyu.edu/phd-admissions-req/"> NYU Center for Data Science PhD Program</a> or <a href="https://med.nyu.edu/research/sackler-institute-graduate-biomedical-sciences/phd-program/phd-program-admissions"> NYU Medical School Sackler Program</a>.
-            Applications are usually due in the fall, for start time of September. Don't miss the deadlines.
-            <br> We also regularly work with Capstone students at NYU CDS, and I often agree to advise NYU students for independent study course.
-            <br> If you are an NYU graduate student, have taken DL/ML courses and are interested in working with us, email me.
-            <br> If you haven't taken these courses, take our Spring course "Deep Learning for Medicine".
-          </p>
-        </div>
-      </div>
-          <!-- <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-          </div> -->
-        <!-- /END THE FEATURETTES -->
-
-      <!-- FOOTER -->
-      <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <!-- <p>&copy; 2018 Narges Razavian &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p> -->
-      </footer>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+      </button>
     </div>
-    </main>
+  </header>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="js/holder.min.js"></script>
-  </body>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-text">
+        <p class="eyebrow">NYU Grossman School of Medicine · NYU Langone Health</p>
+        <h1 data-bind="lab_name">Razavian Lab</h1>
+        <p class="tagline" data-bind="tagline"></p>
+        <div class="pi">
+          <img class="pi-photo" alt="" id="pi-photo">
+          <div>
+            <div class="pi-name" id="pi-name"></div>
+            <div class="pi-title" id="pi-title"></div>
+          </div>
+        </div>
+        <p class="bio" id="pi-bio"></p>
+        <div class="pi-links" id="pi-links"></div>
+        <dl class="stats" id="stats"></dl>
+      </div>
+      <div class="hero-collage" id="collage" aria-hidden="true"></div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Research</h2>
+          <p>Select a theme to see its papers.</p>
+        </div>
+        <div class="themes" id="themes"></div>
+      </div>
+    </section>
+
+    <section id="publications" class="section alt">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Publications</h2>
+          <p id="pub-updated"></p>
+        </div>
+        <div class="toolbar">
+          <label class="search">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 0 1 6.32 12.9l5.39 5.4-1.41 1.4-5.4-5.38A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>
+            <input type="search" id="q" placeholder="Search titles, authors, venues…" aria-label="Search publications">
+          </label>
+          <select id="year" aria-label="Year"><option value="">All years</option></select>
+          <label class="check"><input type="checkbox" id="has-code"> With code</label>
+          <label class="check" title="Conference abstracts, patents and technical reports"><input type="checkbox" id="show-other"> Abstracts &amp; patents</label>
+        </div>
+        <div class="chips" id="topic-chips" role="group" aria-label="Filter by topic"></div>
+        <p class="result-count" id="count" aria-live="polite"></p>
+        <div id="pubs"></div>
+        <div class="more"><button type="button" id="more" class="btn" hidden>Show all</button></div>
+      </div>
+    </section>
+
+    <section id="teaching" class="section">
+      <div class="wrap">
+        <div class="section-head"><h2>Teaching</h2></div>
+        <div id="teach"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="wrap contact">
+        <h2>Contact</h2>
+        <p id="contact-text"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>© <span id="yr"></span> Razavian Lab · NYU Langone Health</span>
+      <span id="footer-updated"></span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
 </html>

@@ -1,0 +1,63 @@
+# Site-wide content. Edit on GitHub (pencil icon) — changes go live in ~1 minute.
+
+lab_name: Razavian Lab
+tagline: Machine learning for medicine — from health records and medical images to foundation models that help clinicians act earlier.
+
+pi:
+  name: Narges Razavian
+  title: Associate Professor
+  affiliation: Departments of Population Health and Radiology, NYU Grossman School of Medicine
+  photo: imgs/narges.jpeg
+  bio: >
+    Our lab develops machine learning methods that turn routinely collected clinical data —
+    electronic health records, clinical notes, radiology and pathology images — into early warnings
+    of preventable and undiagnosed disease. We work closely with clinicians at NYU Langone to
+    validate and deploy these models, and we are committed to releasing our models and code openly.
+  links:
+    - { label: Google Scholar, url: "https://scholar.google.com/citations?user=lr1JM5MAAAAJ&hl=en", icon: scholar }
+    - { label: GitHub, url: "https://github.com/NYUMedML", icon: github }
+    - { label: LinkedIn, url: "https://www.linkedin.com/in/narges-razavian-512b7635/", icon: linkedin }
+    - { label: NYU Profile, url: "https://med.nyu.edu/faculty/narges-sharif-razavian", icon: link }
+    - { label: Email, url: "mailto:narges.razavian@nyulangone.org", icon: mail }
+
+# Used by scripts/update_publications.py
+scholar_id: lr1JM5MAAAAJ
+openalex_author_id: A5079997593
+
+# Research themes. `id` is what papers are tagged with (automatically, or via data/overrides.yml).
+research:
+  - id: foundation
+    title: Medical Foundation Models
+    blurb: Large pretrained models for clinical records, CT, MRI and multimodal data that generalize across tasks and hospitals.
+  - id: ehr
+    title: EHR & Predictive Analytics
+    blurb: Early prediction of preventable and undiagnosed disease from longitudinal electronic health records.
+  - id: neuro
+    title: Neuroimaging & Dementia
+    blurb: Deep learning on brain MRI and CT for Alzheimer's disease, dementia and stroke.
+  - id: imaging
+    title: Medical Imaging
+    blurb: Radiology AI for chest radiographs, head CT and other modalities.
+  - id: pathology
+    title: Computational Pathology
+    blurb: Whole-slide histopathology models for cancer subtyping and mutation prediction.
+  - id: nlp
+    title: Clinical NLP
+    blurb: Language models that read clinical notes for coding, phenotyping and risk prediction.
+  - id: trustworthy
+    title: Robust & Trustworthy ML
+    blurb: Learning with noisy labels, uncertainty, continual learning and fairness in clinical AI.
+
+teaching:
+  - title: Deep Learning in Medicine (BMSC-GA 4493, BMIN-GA 3007)
+    terms: Spring 2018 – 2020
+    links:
+      - { label: Syllabus, url: class_dlmed.html }
+      - { label: "2020 GitHub", url: "https://github.com/nyumc-dl/BMSC-GA-4493-Spring2020" }
+      - { label: "2019 GitHub", url: "https://github.com/nyumc-dl/BMSC-GA-4493-Spring2019" }
+      - { label: "2018 GitHub", url: "https://github.com/nyumc-dl/BMSC-GA-4493-Spring2018" }
+
+contact:
+  text: >
+    Interested in joining the lab or collaborating? Please contact me at
+  email: narges.razavian@nyulangone.org

@@ -1,0 +1,32 @@
+# Manual corrections to the auto-generated publication data (data/publications.json).
+# Match a paper by a distinctive piece of its title (case-insensitive). Anything you set here wins.
+#
+# Available fields:
+#   summary:  "2-3 sentence description"
+#   code:     https://github.com/...           (released code)
+#   image:    assets/pubs/my-figure.png        (upload a figure to assets/pubs/)
+#   topics:   [neuro, foundation]               (ids from data/site.yml → research)
+#   links:    [{ label: Project page, url: https://... }, { label: Model weights, url: https://... }]
+#   featured: true                              (shown first, highlighted)
+#   hide:     true                              (remove from the site, e.g. duplicates or abstracts)
+
+- match: "Graph Neural Network on Electronic Health Records for Predicting Alzheimer"
+  code: https://github.com/NYUMedML/GNN_for_EHR
+- match: "Early-Learning Regularization Prevents Memorization of Noisy Labels"
+  code: https://github.com/shengliu66/ELR
+- match: "On the design of convolutional neural networks for automatic detection of Alzheimer"
+  code: https://github.com/NYUMedML/CNN_design_for_AD
+- match: "DARTS: DenseUnet-based Automatic Rapid Tool for brain Segmentation"
+  code: https://github.com/NYUMedML/DARTS
+- match: "Predicting childhood obesity using electronic health records"
+  code: https://github.com/NYUMedML/ObesityPY
+- match: "Chronic disease prediction using medical notes"
+  code: https://github.com/NYUMedML/DeepEHR
+- match: "Multi-task prediction of disease onsets from longitudinal laboratory tests"
+  code: https://github.com/clinicalml/deepDiagnosis
+- match: "Temporal convolutional neural networks for diagnosis from lab tests"
+  code: https://github.com/clinicalml/deepDiagnosis
+- match: "Visual Exploration of Temporal Data in Electronic Medical Records"
+  code: https://github.com/nyuvis/patient-viz
+- match: "Classification and mutation prediction from non–small cell lung cancer histopathology"
+  code: https://github.com/ncoudray/DeepPATH
