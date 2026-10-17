@@ -4,8 +4,9 @@
 Pipeline (results are cached in data/publications.json, so each paper is looked up once):
   1. Read the Google Scholar profile.
   2. Every paper: match on OpenAlex (fallback Crossref) for DOI, authors, PDF and arXiv links.
-  3. The latest FEATURED_N papers additionally get:
-       - a released-code link (GitHub/GitLab/Hugging Face) from the abstract or PDF,
+  3. Every paper: a released-code link (GitHub/GitLab/Hugging Face) from the abstract, else from
+     the open full text (Europe PMC, then the PDF), e.g. its "Code availability" statement.
+  4. The latest FEATURED_N papers additionally get:
        - a representative figure (arXiv HTML figure, else from the PDF),
        - a short summary (the abstract's opening sentences).
      When a paper drops out of the latest N, its figure and summary are removed.
@@ -36,12 +37,13 @@ DATA = ROOT / "data"
 PUB_JSON = DATA / "publications.json"
 FIG_DIR = ROOT / "assets" / "pubs"
 OVERRIDES = DATA / "overrides.yml"
-FEATURED_N = 10  # only the latest N papers get a figure, summary and full code search
+FEATURED_N = 10  # only the latest N papers get a figure and summary
 
 SITE = yaml.safe_load((DATA / "site.yml").read_text())
 SCHOLAR_ID = SITE["scholar_id"]
 OPENALEX_AUTHOR = SITE.get("openalex_author_id")  # optional, improves matching
 ENRICH_VERSION = 1
+CODE_VERSION = 1  # bump to search every paper for code again
 
 TOPICS = [t["id"] for t in SITE["research"]]
 
@@ -210,34 +212,88 @@ def arxiv_match(title):
     return None
 
 
-CODE_RE = re.compile(
-    r"https?://(?:www\.)?(?:github\.com|gitlab\.com|huggingface\.co|bitbucket\.org)/"
-    r"[A-Za-z0-9_.\-]+(?:/[A-Za-z0-9_.\-]+)?", re.I)
-CODE_HINT = re.compile(r"code|implementation|available|release|repositor|open[- ]source|github", re.I)
+HOSTS = r"(?:github\.com|gitlab\.com|huggingface\.co|bitbucket\.org)"
+CODE_RE = re.compile(rf"(?:https?://)?(?:www\.)?{HOSTS}/[A-Za-z0-9_.\-]+(?:/[A-Za-z0-9_.\-]+)?", re.I)
+# The sentence before a link says whether it is the paper's own code or a tool it builds on
+CODE_OWN = re.compile(
+    r"\b(our|the|source|this|all) codes?\b|\bcodes?\b[^.]{0,100}\b(available|released|provided|found|accessible|shared)\b"
+    r"|code availability|open[- ]source (repository|code|implementation)|implementation (is|are) (publicly )?available"
+    r"|github repository|(publicly )?available (at|on|online)|\bthis paper\b", re.I)  # "this paper": Cell Press resource tables
+CODE_OTHER = re.compile(
+    r"\b((starting|adapted|forked|borrowed) from|from (the |their )?(original|official)|extend(ed|s)?|customi[sz]ed|"
+    r"integrated|third[- ]party|we (used|use|adopt(ed)?|follow(ed)?)|based on|compared (models|methods)|"
+    r"checkpoints?|repositories)\b", re.I)
 
 
 def clean_code_url(u):
     u = u.rstrip(".,;)")
+    if not u.startswith("http"):
+        u = "https://" + u
     parts = urlparse(u).path.strip("/").split("/")
     if "huggingface.co" not in u and len(parts) < 2:
         return None  # org/user page, not a repo
     return u
 
 
-def find_code(texts):
-    """First repo link in the abstract/comments, else one mentioned near 'code' in the PDF."""
-    for t in texts[:2]:
-        for m in CODE_RE.finditer(t or ""):
+def flatten_text(t):
+    """Join PDF lines and repair links that text extraction split with spaces ("https: //github.com/ org/repo")."""
+    t = re.sub(r"(?<=-)\s*\n\s*", "", t or "")
+    t = re.sub(r"\s+", " ", t)
+    t = re.sub(r"(https?:)\s*/\s*/\s*", r"\1//", t)
+    t = re.sub(rf"({HOSTS}/)\s+", r"\1", t, flags=re.I)
+    t = re.sub(rf"({HOSTS}/[\w.\-]+)\s*/\s*(?=\w)", r"\1/", t, flags=re.I)
+    return t
+
+
+def own_code_link(text):
+    """The repo the paper releases: a link whose sentence talks about the paper's code, not one it builds on."""
+    t = flatten_text(text)
+    found = []
+    for m in CODE_RE.finditer(t):
+        before = t[max(0, m.start() - 300): m.start()]
+        sentence = re.split(r"[.!?]\s+(?=[A-Z])", before)[-1]
+        u = clean_code_url(m.group(0))
+        if u and CODE_OWN.search(sentence) and not CODE_OTHER.search(sentence):
+            found.append(u)
+    # Prefer a code host over a Hugging Face model page
+    return next((u for u in found if "huggingface.co" not in u), found[0] if found else None)
+
+
+def strip_references(t):
+    heads = list(re.finditer(r"\n\s*(References|REFERENCES|Bibliography|Literature Cited)\s*\n", t))
+    return t[:heads[-1].start()] if heads else t
+
+
+def pmc_fulltext(doi):
+    """Open-access full text from Europe PMC (most journal papers end up there), without the reference list."""
+    r = get("https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+            params={"query": f'DOI:"{doi}"', "format": "json", "resultType": "lite"})
+    if r is None or r.status_code != 200:
+        return ""
+    hits = r.json().get("resultList", {}).get("result", [])
+    pmcid = next((h["pmcid"] for h in hits if h.get("pmcid")), None)
+    if not pmcid:
+        return ""
+    r = get(f"https://www.ebi.ac.uk/europepmc/webservices/rest/{pmcid}/fullTextXML")
+    if r is None or r.status_code != 200:
+        return ""
+    x = re.sub(r"<ref-list.*?</ref-list>", " ", r.text, flags=re.S)
+    x = re.sub(r'<ext-link[^>]*xlink:href="([^"]+)"[^>]*>.*?</ext-link>', r" \1 ", x, flags=re.S)
+    return html.unescape(re.sub(r"<[^>]+>", " ", x))
+
+
+def find_code(p, pdf=None, comment=""):
+    """Released code: any repo link in the abstract or arXiv comment, else the paper's own repo
+    from its open full text (Europe PMC, then the PDF)."""
+    for t in (p.get("abstract", ""), comment):
+        for m in CODE_RE.finditer(flatten_text(t)):
             if (u := clean_code_url(m.group(0))):
                 return u
-    for t in texts[2:]:
-        t = re.sub(r"-\s*\n\s*", "", t or "")      # undo PDF line-break hyphenation
-        t = re.sub(r"\s*\n\s*", " ", t)
-        for m in CODE_RE.finditer(t):
-            ctx = t[max(0, m.start() - 160): m.start()]
-            if CODE_HINT.search(ctx) and (u := clean_code_url(m.group(0))):
-                return u
-    return None
+    if p.get("doi") and (u := own_code_link(pmc_fulltext(p["doi"]))):
+        return u
+    if pdf is None:
+        pdf = download_pdf([p.get("arxiv") and f"https://arxiv.org/pdf/{p['arxiv']}", p.get("pdf_url")])
+    return own_code_link(pdf_text(pdf)) if pdf else None
 
 
 def download_pdf(urls):
@@ -373,10 +429,11 @@ def find_figure(p, pdf=None):
     return img
 
 
-def pdf_text(pdf, max_pages=4):
+def pdf_text(pdf):
+    """The whole paper (code availability statements are usually at the end), minus the references."""
     import pymupdf
     doc = pymupdf.open(stream=pdf, filetype="pdf")
-    return "\n".join(doc[i].get_text() for i in range(min(max_pages, len(doc))))
+    return strip_references("\n".join(page.get_text() for page in doc))
 
 
 def first_sentences(text, n=2, limit=330):
@@ -457,7 +514,6 @@ def enrich_metadata(p):
         p["arxiv"] = m.group(1)
     if p.get("arxiv") and not p.get("pdf_url"):
         p["pdf_url"] = f"https://arxiv.org/pdf/{p['arxiv']}"
-    p["code"] = find_code([p.get("abstract", "")])
     p["topics"] = guess_topics(f"{p['title']} {p.get('abstract', '')}")
     p["enriched_v"] = ENRICH_VERSION
     p["enriched_at"] = dt.date.today().isoformat()
@@ -474,8 +530,8 @@ def enrich_rich(p):
             p["abstract"] = p.get("abstract") or arx["abstract"]
             p["pdf_url"] = p.get("pdf_url") or f"https://arxiv.org/pdf/{arx['id']}"
     pdf = download_pdf([p.get("arxiv") and f"https://arxiv.org/pdf/{p['arxiv']}", p.get("pdf_url")])
-    p["code"] = find_code([p.get("abstract", ""), arx["comment"] if arx else "",
-                           pdf_text(pdf) if pdf else ""])
+    p["code"] = find_code(p, pdf or b"", arx["comment"] if arx else "")
+    p["code_v"] = CODE_VERSION
     p["image"] = find_figure(p, pdf)
     p["summary"] = first_sentences(p.get("abstract") or "")
     p["summary_source"] = "abstract" if p["summary"] else None
@@ -555,6 +611,8 @@ def main():
     for r in rows:
         p = {**cache.get(r["scholar_id"], {}), **r}
         p["recent"] = p["scholar_id"] in recent
+        if args.refresh:
+            p.pop("code_v", None)
         budget = not args.limit or done < args.limit
         try:
             if budget and (args.refresh or p.get("enriched_v") != ENRICH_VERSION):
@@ -567,6 +625,9 @@ def main():
                     enrich_rich(p)
                 elif args.refigure and not p.get("image"):
                     p["image"] = find_figure(p)
+            if p["kind"] == "paper" and p.get("enriched_v") and budget and p.get("code_v") != CODE_VERSION:
+                p["code"] = find_code(p)
+                p["code_v"] = CODE_VERSION
         except RateLimited as e:
             log(f"  {e} rate limit reached; this paper will be retried next run")
         except Exception as e:  # one bad paper must not break the sync

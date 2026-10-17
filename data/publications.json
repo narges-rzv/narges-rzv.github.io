@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-10",
+ "updated": "2026-10-17",
  "scholar_id": "lr1JM5MAAAAJ",
  "profile": {
-  "citations": 8322,
+  "citations": 8372,
   "h_index": 28,
-  "i10_index": 47
+  "i10_index": 49
  },
  "papers": [
   {
    "scholar_id": "lr1JM5MAAAAJ:HE397vMXCloC",
    "title": "Comparative Study of Anatomical and Learned Features in AI Models for Structural Brain MRI",
-   "authors_short": "B Yu, ML Escoriza, L Chen, AV Masurkar, N Razavian, ...",
-   "venue": "arXiv preprint arXiv:2609.06807",
+   "authors_short": "B Yu, ML Escoriza, L Chen, AV Masurkar, N Razavian, CF Granda",
+   "venue": "",
    "year": 2026,
    "citations": 0,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:HE397vMXCloC",
@@ -30,7 +30,7 @@
    "venue_full": "Research Square",
    "pdf_url": "https://www.researchsquare.com/article/rs-10851563/latest.pdf",
    "arxiv": "2609.06807",
-   "code": null,
+   "code": "https://github.com/MIQUEL-LOPEZ-ESCORIZA/ai4brainmri",
    "image": "assets/pubs/2026-comparative-study-of-anatomical-and-learned-features.webp",
    "summary": "In this work, we comprehensively evaluate three popular feature-extraction paradigms in AI-based neuroimaging modeling: (1) computation of anatomical surfaces and volumes, (2) supervised learning with convolutional neural networks (CNNs), and (3) unsupervised pretraining of vision transformer (ViT) foundation models, followed by supervised finetuning.",
    "topics": [
@@ -42,7 +42,8 @@
    "enriched_at": "2026-10-10",
    "kind": "paper",
    "recent": true,
-   "rich_v": 1
+   "rich_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:tOudhMTPpwUC",
@@ -75,7 +76,8 @@
    "enriched_at": "2026-10-10",
    "kind": "paper",
    "recent": true,
-   "rich_v": 1
+   "rich_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:J-pR_7NvFogC",
@@ -110,7 +112,8 @@
    "enriched_at": "2026-10-10",
    "kind": "paper",
    "recent": true,
-   "rich_v": 1
+   "rich_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:5ugPr518TE4C",
@@ -140,7 +143,7 @@
    "venue_full": "arXiv (Cornell University)",
    "pdf_url": "https://arxiv.org/pdf/2606.14957",
    "arxiv": "2606.14957",
-   "code": null,
+   "code": "https://github.com/NYUMedML/Neuro-JEPA",
    "image": "assets/pubs/2026-learning-sparse-latent-predictive-foundation-model-for.webp",
    "summary": "Brain MRIs are routinely acquired as multiple complementary sequences with unique contrast weighting, including T1-weighed imaging (T1w) anatomic and fluid-sensitive T2-weighted (T2w) contrasts.",
    "topics": [
@@ -152,7 +155,8 @@
    "enriched_at": "2026-10-10",
    "kind": "paper",
    "recent": true,
-   "rich_v": 1
+   "rich_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:geHnlv5EZngC",
@@ -190,7 +194,8 @@
    "image": "assets/pubs/2026-robust-disease-prognosis-via-diagnostic-knowledge-preservation.webp",
    "summary": "Accurate disease prognosis is essential for patient care but is often hindered by the lack of long-term data.",
    "summary_source": "abstract",
-   "rich_v": 1
+   "rich_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:WbkHhVStYXYC",
@@ -198,7 +203,7 @@
    "authors_short": "W Zhu, H Huang, H Tang, R Musthyala, B Yu, L Chen, E Vega, ...",
    "venue": "Nature Biomedical Engineering, 1-12",
    "year": 2026,
-   "citations": 26,
+   "citations": 28,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:WbkHhVStYXYC",
    "openalex_id": "W7155205839",
    "doi": "10.1038/s41551-026-01668-w",
@@ -224,7 +229,7 @@
    "venue_full": "Nature Biomedical Engineering",
    "pdf_url": "https://www.nature.com/articles/s41551-026-01668-w.pdf",
    "arxiv": "2502.02779",
-   "code": null,
+   "code": "https://github.com/NYUMedML/headCT_foundation",
    "image": "assets/pubs/2026-3d-foundation-model-for-generalizable-disease-detection.webp",
    "summary": "Head computed tomography (CT) imaging is a widely used imaging modality with multitudes of medical indications, particularly in assessing pathology of the brain, skull and cerebrovascular system.",
    "topics": [
@@ -236,7 +241,8 @@
    "enriched_at": "2026-10-10",
    "kind": "paper",
    "recent": true,
-   "rich_v": 1
+   "rich_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:q3oQSFYPqjQC",
@@ -280,7 +286,7 @@
    "authors_short": "LA Mavromatis, V Zlatanic, E Agarunov, SA Sanoba, MD Kluger, ...",
    "venue": "JAMA oncology 12 (5), 497-505",
    "year": 2026,
-   "citations": 8,
+   "citations": 11,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:eflP2zaiRacC",
    "openalex_id": "W7140604005",
    "doi": "10.1001/jamaoncol.2026.0372",
@@ -312,7 +318,8 @@
    "enriched_at": "2026-10-10",
    "kind": "paper",
    "recent": true,
-   "rich_v": 1
+   "rich_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:BrmTIyaxlBUC",
@@ -344,7 +351,7 @@
    "venue_full": "arXiv (Cornell University)",
    "pdf_url": "https://arxiv.org/pdf/2603.24562",
    "arxiv": "2603.24562",
-   "code": null,
+   "code": "https://github.com/xgao0o/RAVEN",
    "image": "assets/pubs/2026-scaling-recurrence-aware-foundation-models-for-clinical.webp",
    "summary": "While large-scale pretraining has revolutionized language modeling, its potential remains underexplored in healthcare with structured electronic health records (EHRs). We present RAVEN, a novel generative pretraining strategy for sequential EHR data based on Recurrence-Aware next-Visit EveNt prediction.",
    "topics": [
@@ -356,7 +363,8 @@
    "enriched_at": "2026-10-10",
    "kind": "paper",
    "recent": true,
-   "rich_v": 1
+   "rich_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:D_sINldO8mEC",
@@ -394,7 +402,7 @@
    "venue_full": "arXiv (Cornell University)",
    "pdf_url": "https://arxiv.org/pdf/2603.21597",
    "arxiv": "2603.21597",
-   "code": null,
+   "code": "https://github.com/shengliu66/Cerebra",
    "image": "assets/pubs/2026-cerebra-a-multidisciplinary-ai-board-for-multimodal.webp",
    "summary": "Modern clinical practice increasingly depends on reasoning over heterogeneous, evolving, and incomplete patient data. Although recent advances in multimodal foundation models have improved performance on various clinical tasks, most existing models remain static, opaque, and poorly aligned with real-world clinical workflows.",
    "topics": [
@@ -406,7 +414,8 @@
    "enriched_at": "2026-10-10",
    "kind": "paper",
    "recent": true,
-   "rich_v": 1
+   "rich_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:fQNAKQ3IYiAC",
@@ -495,7 +504,8 @@
    "enriched_at": "2026-10-10",
    "kind": "paper",
    "recent": true,
-   "rich_v": 1
+   "rich_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:5Ul4iDaHHb8C",
@@ -561,7 +571,44 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
+  },
+  {
+   "scholar_id": "lr1JM5MAAAAJ:vRqMK49ujn8C",
+   "title": "Foundation models for clinical records at health system scale",
+   "authors_short": "HR Rajamohan, X Gao, W Zhu, SL Huang, L Chen, K Cho, CM Deniz, ...",
+   "venue": "arXiv preprint arXiv:2507.00574",
+   "year": 2025,
+   "citations": 4,
+   "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:vRqMK49ujn8C",
+   "kind": "paper",
+   "recent": false,
+   "openalex_id": "W4416886061",
+   "doi": "10.48550/arxiv.2507.00574",
+   "abstract": "Large-scale pretraining has transformed modeling of language and other data types, but its potential remains underexplored in healthcare with structured electronic health records (EHRs). We present a novel generative pretraining strategy for sequential EHR data using next-visit event prediction. Our model learns to autoregressively generate various tokenized clinical events for the next visit based on patient history and inherently handles the joint prediction of heterogeneous data types. Additionally, we introduce regularization on predicting repeated events and highlight a key pitfall in EHR-based foundation model evaluations: repeated event tokens can inflate performance metrics when new onsets are not distinguished from subsequent occurrences. Our model is evaluated via zero-shot prediction for forecasting dementia and knee osteoarthritis incidence within 2 and 5 years, and the model performance rivals a fully fine-tuned masked pretrained Transformer baseline, demonstrating that our approach captures complex clinical dependencies without requiring costly task-specific fine-tuning.",
+   "authors": [
+    "Haresh Rengaraj Rajamohan",
+    "Gao, Xiang",
+    "Weicheng Zhu",
+    "Shih‐Lun Huang",
+    "Long Chen",
+    "Kyunghyun Cho",
+    "Cem Murat Deniz",
+    "Narges Razavian"
+   ],
+   "date": "2025-07-01",
+   "venue_full": "arXiv (Cornell University)",
+   "pdf_url": "https://arxiv.org/pdf/2507.00574",
+   "arxiv": "2507.00574",
+   "topics": [
+    "foundation",
+    "ehr"
+   ],
+   "enriched_v": 1,
+   "enriched_at": "2026-10-17",
+   "code": null,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:CHSYGLWDkRkC",
@@ -569,7 +616,7 @@
    "authors_short": "W Zhu, L Chen, Y Aphinyanaphongs, F Kastrinos, DM Simeone, ...",
    "venue": "Scientific Reports 15 (1), 11697",
    "year": 2025,
-   "citations": 8,
+   "citations": 10,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:CHSYGLWDkRkC",
    "openalex_id": "W4409180824",
    "doi": "10.1038/s41598-025-89607-8",
@@ -596,7 +643,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:738O_yMBCRsC",
@@ -639,18 +687,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
-  },
-  {
-   "scholar_id": "lr1JM5MAAAAJ:vRqMK49ujn8C",
-   "title": "Foundation models for clinical records at health system scale",
-   "authors_short": "HR Rajamohan, X Gao, W Zhu, SL Huang, L Chen, K Cho, CM Deniz, ...",
-   "venue": "arXiv preprint arXiv:2507.00574",
-   "year": 2025,
-   "citations": 4,
-   "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:vRqMK49ujn8C",
-   "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:uWQEDVKXjbEC",
@@ -708,7 +746,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:XiSMed-E-HIC",
@@ -807,7 +846,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:KxtntwgDAa4C",
@@ -839,7 +879,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:nb7KW1ujOQ8C",
@@ -870,7 +911,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:1sJd4Hv_s6UC",
@@ -996,7 +1038,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:D03iK_w7-QYC",
@@ -1029,7 +1072,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:xtRiw3GOFMkC",
@@ -1085,7 +1129,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:cFHS6HbyZ2cC",
@@ -1107,12 +1152,13 @@
    "date": "2022-07-30",
    "venue_full": "Neuroradiology",
    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00234-022-03023-7.pdf",
-   "code": null,
+   "code": "https://github.com/nkasmanoff/mri-content-detection",
    "topics": [],
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:bFI3QPDXJZMC",
@@ -1141,7 +1187,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:_xSYboBqXhAC",
@@ -1152,13 +1199,11 @@
    "citations": 2,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:_xSYboBqXhAC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "abstract",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:a0OBvERweLwC",
@@ -1184,7 +1229,7 @@
    "date": "2022-10-17",
    "venue_full": "Scientific Reports",
    "pdf_url": "https://www.nature.com/articles/s41598-022-20674-x.pdf",
-   "code": null,
+   "code": "https://github.com/NYUMedML/CNN_design_for_AD",
    "topics": [
     "ehr",
     "neuro"
@@ -1192,7 +1237,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:yD5IFk8b50cC",
@@ -1227,7 +1273,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:u_35RYKgDlwC",
@@ -1288,7 +1335,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:rO6llkc54NcC",
@@ -1319,7 +1367,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:2P1L_qKh6hAC",
@@ -1362,7 +1411,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:k_IJM867U9cC",
@@ -1373,15 +1423,13 @@
    "citations": 0,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:k_IJM867U9cC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [
     "pathology"
    ],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "patent",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:RYcK_YlVTxYC",
@@ -1443,7 +1491,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:ldfaerwXgEUC",
@@ -1451,7 +1500,7 @@
    "authors_short": "A Kaku, S Upadhya, N Razavian",
    "venue": "Advances in Neural Information Processing Systems 34, 24063-24074",
    "year": 2021,
-   "citations": 40,
+   "citations": 41,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:ldfaerwXgEUC",
    "openalex_id": "W3209736332",
    "doi": "10.48550/arxiv.2110.14805",
@@ -1465,7 +1514,7 @@
    "venue_full": "arXiv (Cornell University)",
    "pdf_url": "https://arxiv.org/pdf/2110.14805",
    "arxiv": "2110.14805",
-   "code": null,
+   "code": "https://github.com/aakashrkaku/intermdiate_layer_matter_ssl",
    "topics": [
     "foundation",
     "imaging"
@@ -1473,7 +1522,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:pqnbT2bcN3wC",
@@ -1512,7 +1562,7 @@
    "authors_short": "R Hong, W Liu, D DeLair, N Razavian, D Fenyö",
    "venue": "Cell Reports Medicine 2 (9)",
    "year": 2021,
-   "citations": 183,
+   "citations": 185,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:iH-uZ7U-co4C",
    "openalex_id": "W3201041614",
    "doi": "10.1016/j.xcrm.2021.100400",
@@ -1527,7 +1577,7 @@
    "date": "2021-09-01",
    "venue_full": "Cell Reports Medicine",
    "pdf_url": "http://www.cell.com/article/S2666379121002585/pdf",
-   "code": null,
+   "code": "https://github.com/rhong3/Panoptes",
    "topics": [
     "ehr",
     "pathology"
@@ -1535,7 +1585,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:BqipwSGYUEgC",
@@ -1562,7 +1613,7 @@
    "date": "2021-06-01",
    "venue_full": "medRxiv",
    "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2021/06/01/2021.05.28.21257318.full.pdf",
-   "code": null,
+   "code": "https://github.com/NYUMedML/DeepDementia",
    "topics": [
     "ehr",
     "neuro"
@@ -1570,7 +1621,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:M3NEmzRMIkIC",
@@ -1578,7 +1630,7 @@
    "authors_short": "FE Shamout, Y Shen, N Wu, A Kaku, J Park, T Makino, S Jastrzębski, ...",
    "venue": "NPJ digital medicine 4 (1), 80",
    "year": 2021,
-   "citations": 185,
+   "citations": 187,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:M3NEmzRMIkIC",
    "openalex_id": "W3047296027",
    "doi": "10.1038/s41746-021-00453-0",
@@ -1617,7 +1669,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:hMod-77fHWUC",
@@ -1645,7 +1698,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:blknAaTinKkC",
@@ -1653,7 +1707,7 @@
    "authors_short": "K Nemani, C Li, M Olfson, EM Blessing, N Razavian, J Chen, E Petkova, ...",
    "venue": "JAMA psychiatry 78 (4), 380-386",
    "year": 2021,
-   "citations": 476,
+   "citations": 477,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:blknAaTinKkC",
    "openalex_id": "W3122258079",
    "doi": "10.1001/jamapsychiatry.2020.4442",
@@ -1678,7 +1732,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:M05iB0D1s5AC",
@@ -1707,7 +1762,8 @@
     "ehr"
    ],
    "enriched_v": 1,
-   "enriched_at": "2026-10-10"
+   "enriched_at": "2026-10-10",
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:J_g5lzvAfSwC",
@@ -1786,7 +1842,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:70eg2SAEIzsC",
@@ -1794,7 +1851,7 @@
    "authors_short": "S Liu, J Niles-Weed, N Razavian, C Fernandez-Granda",
    "venue": "arXiv preprint arXiv:2007.00151",
    "year": 2020,
-   "citations": 1022,
+   "citations": 1031,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:70eg2SAEIzsC",
    "openalex_id": "W3039366696",
    "doi": "10.48550/arxiv.2007.00151",
@@ -1809,7 +1866,7 @@
    "venue_full": "arXiv (Cornell University)",
    "pdf_url": "https://arxiv.org/pdf/2007.00151",
    "arxiv": "2007.00151",
-   "code": null,
+   "code": "https://github.com/shengliu66/ELR",
    "topics": [
     "imaging",
     "trustworthy"
@@ -1817,7 +1874,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:r0BpntZqJG4C",
@@ -1846,7 +1904,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:4JMBOYKVnBMC",
@@ -1854,7 +1913,7 @@
    "authors_short": "N Razavian, F Knoll, KJ Geras",
    "venue": "Seminars in musculoskeletal radiology 24 (01), 003-011",
    "year": 2020,
-   "citations": 50,
+   "citations": 51,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:4JMBOYKVnBMC",
    "openalex_id": "W3003208495",
    "doi": "10.1055/s-0039-3401041",
@@ -1875,7 +1934,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:isC4tDSrTZIC",
@@ -1905,7 +1965,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:dshw04ExmUIC",
@@ -1937,7 +1998,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:e5wmG9Sq2KIC",
@@ -1967,7 +2029,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:HDshCWvjkbEC",
@@ -1998,7 +2061,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:R3hNpaxXUhUC",
@@ -2027,7 +2091,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:TQgYirikUcIC",
@@ -2063,7 +2128,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:mB3voiENLucC",
@@ -2126,7 +2192,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:-f6ydRqryjwC",
@@ -2152,7 +2219,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:SP6oXDckpogC",
@@ -2182,7 +2250,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:ZeXyd9-uunAC",
@@ -2216,7 +2285,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:L8Ckcad2t8MC",
@@ -2224,7 +2294,7 @@
    "authors_short": "R Hammond, R Athanasiadou, S Curado, Y Aphinyanaphongs, C Abrams, ...",
    "venue": "PloS one 14 (4), e0215571",
    "year": 2019,
-   "citations": 112,
+   "citations": 113,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:L8Ckcad2t8MC",
    "openalex_id": "W2940299115",
    "doi": "10.1371/journal.pone.0215571",
@@ -2253,7 +2323,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:dhFuZR0502QC",
@@ -2299,7 +2370,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:aqlVkmm33-oC",
@@ -2330,7 +2402,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:hC7cP41nSMkC",
@@ -2341,15 +2414,13 @@
    "citations": 0,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:hC7cP41nSMkC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [
     "pathology"
    ],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "abstract",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:qxL8FJ1GzNcC",
@@ -2371,7 +2442,7 @@
    "venue_full": "arXiv (Cornell University)",
    "pdf_url": "https://arxiv.org/pdf/1808.04928",
    "arxiv": "1808.04928",
-   "code": null,
+   "code": "https://github.com/NYUMedML/DeepEHR",
    "topics": [
     "ehr",
     "nlp"
@@ -2379,7 +2450,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:Zph67rFs4hoC",
@@ -2387,7 +2459,7 @@
    "authors_short": "N Coudray, PS Ocampo, T Sakellaropoulos, N Narula, M Snuderl, ...",
    "venue": "Nature medicine 24 (10), 1559-1567",
    "year": 2018,
-   "citations": 3677,
+   "citations": 3701,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:Zph67rFs4hoC",
    "code": null,
    "topics": [
@@ -2411,7 +2483,8 @@
    ],
    "venue_full": "Nature Medicine",
    "pdf_url": "http://www.nature.com/articles/s41591-018-0177-5.pdf",
-   "enriched_v": 1
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:M3ejUd6NZC8C",
@@ -2449,16 +2522,14 @@
    "authors_short": "NS Razavian, S Blecker, AM Schmidt, A Smith-McLallen, S Nigam, ...",
    "venue": "US Patent App. 15/494,354",
    "year": 2017,
-   "citations": 62,
+   "citations": 63,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:ULOm3_A8WrAC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "patent",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:roLk4NBRz8UC",
@@ -2469,15 +2540,79 @@
    "citations": 216,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:roLk4NBRz8UC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [
     "ehr"
    ],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "openalex_id": "W2964312993",
+   "doi": null,
+   "abstract": "",
+   "authors": [
+    "Narges Razavian",
+    "Jake Marcus",
+    "David Alexander Sontag"
+   ],
+   "date": "2016-12-10",
+   "pdf_url": null,
+   "enriched_v": 1,
+   "code_v": 1
+  },
+  {
+   "scholar_id": "lr1JM5MAAAAJ:ns9cj8rnVeAC",
+   "title": "Gaussian Processes for interpreting Multiple Prostate Specific Antigen measurements for Prostate Cancer Prediction.",
+   "authors_short": "N Razavian, S Blecker, DA Sontag",
+   "venue": "AMIA",
+   "year": 2015,
+   "citations": 0,
+   "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:ns9cj8rnVeAC",
+   "code": null,
+   "topics": [],
+   "enriched_at": "2026-10-17",
+   "kind": "paper",
+   "recent": false,
+   "openalex_id": "W2576744990",
+   "doi": null,
+   "abstract": "",
+   "authors": [
+    "Narges Razavian",
+    "Saul Blecker",
+    "David Alexander Sontag"
+   ],
+   "date": "2015-01-01",
+   "venue_full": "AMIA",
+   "pdf_url": null,
+   "enriched_v": 1,
+   "code_v": 1
+  },
+  {
+   "scholar_id": "lr1JM5MAAAAJ:KlAtU1dfN6UC",
+   "title": "Visual Exploration of Temporal Data in Electronic Medical Records.",
+   "authors_short": "J Krause, N Razavian, E Bertini, DA Sontag",
+   "venue": "AMIA",
+   "year": 2015,
+   "citations": 3,
+   "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:KlAtU1dfN6UC",
+   "code": null,
+   "topics": [],
+   "enriched_at": "2026-10-17",
+   "kind": "paper",
+   "recent": false,
+   "openalex_id": "W2572443630",
+   "doi": null,
+   "abstract": "",
+   "authors": [
+    "Josua Krause",
+    "Narges Razavian",
+    "Enrico Bertini",
+    "David Alexander Sontag"
+   ],
+   "date": "2015-01-01",
+   "venue_full": "AMIA",
+   "pdf_url": null,
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:LkGwnXOMwfcC",
@@ -2506,7 +2641,8 @@
    ],
    "venue_full": "Big Data",
    "pdf_url": "https://journals.sagepub.com/doi/pdf/10.1089/big.2015.0020",
-   "enriched_v": 1
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:eQOLeE2rZwMC",
@@ -2526,7 +2662,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:WF5omc3nYNoC",
@@ -2548,7 +2685,8 @@
    ],
    "venue_full": "XRDS: Crossroads, The ACM Magazine for Students",
    "pdf_url": null,
-   "enriched_v": 1
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:YsMSGLbcyi4C",
@@ -2636,38 +2774,31 @@
    "enriched_v": 1
   },
   {
-   "scholar_id": "lr1JM5MAAAAJ:ns9cj8rnVeAC",
-   "title": "Gaussian Processes for interpreting Multiple Prostate Specific Antigen measurements for Prostate Cancer Prediction.",
-   "authors_short": "N Razavian, S Blecker, DA Sontag",
-   "venue": "AMIA",
-   "year": 2015,
-   "citations": 0,
-   "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:ns9cj8rnVeAC",
+   "scholar_id": "lr1JM5MAAAAJ:IjCSPb-OGe4C",
+   "title": "Continuous graphical models for static and dynamic distributions: Application to structural biology",
+   "authors_short": "NS Razavian",
+   "venue": "Carnegie Mellon University",
+   "year": 2013,
+   "citations": 2,
+   "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:IjCSPb-OGe4C",
    "code": null,
-   "image": null,
-   "summary": "",
-   "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
-   "kind": "paper",
-   "recent": false
-  },
-  {
-   "scholar_id": "lr1JM5MAAAAJ:KlAtU1dfN6UC",
-   "title": "Visual Exploration of Temporal Data in Electronic Medical Records.",
-   "authors_short": "J Krause, N Razavian, E Bertini, DA Sontag",
-   "venue": "AMIA",
-   "year": 2015,
-   "citations": 3,
-   "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:KlAtU1dfN6UC",
-   "code": null,
-   "image": null,
-   "summary": "",
-   "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
-   "kind": "paper",
-   "recent": false
+   "topics": [
+    "foundation",
+    "imaging"
+   ],
+   "enriched_at": "2026-10-17",
+   "kind": "report",
+   "recent": false,
+   "openalex_id": "W33707932",
+   "doi": "10.1184/r1/6715352",
+   "abstract": "Generative models of protein structure enable researchers to predict the behavior of proteins under different conditions. Continuous graphical models are powerful and efficient tools for modeling static and dynamic distributions, which can be used for learning generative models of molecular dynamics. In this thesis, we develop new and improved continuous graphical models, to be used in modeling of protein structure. We first present von Mises graphical models, and develop consistent and efficient algorithms for sparse structure learning and parameter estimation, and inference. We compare our model to sparse Gaussian graphical model and show it outperforms GGMs on synthetic and Engrailed protein molecular dynamics datasets. Next, we develop algorithms to estimate Mixture of von Mises graphical models using Expectation Maximization, and show that these models outperform Von Mises, Gaussian and mixture of Gaussian graphical models in terms of accuracy of prediction in imputation test of non-redundant protein structure datasets. We then use non-paranormal and nonparametric graphical models, which have extensive representation power, and compare several state of the art structure learning methods that can be used prior to nonparametric inference in reproducing kernel Hilbert space embedded graphical models. To be able to take advantage of the nonparametric models, we also propose feature space embedded belief propagation, and use random Fourier based feature approximation in our proposed feature belief propagation, to scale the inference algorithm to larger datasets. To improve the scalability further, we also show the integration of Coreset selection algorithm with the nonparametric inference, and show that the combined model scales to large datasets with very small adverse effect on the quality of predictions. Finally, we present time varying sparse Gaussian graphical models, to learn smoothly varying graphical models of molecular dynamics simulation data, and present results on CypA protein",
+   "authors": [
+    "Narges Razavian"
+   ],
+   "date": "2013-01-01",
+   "venue_full": "KiltHub Repository",
+   "pdf_url": "http://repository.cmu.edu/dissertations/340",
+   "enriched_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:kNdYIx-mwKoC",
@@ -2678,32 +2809,14 @@
    "citations": 21,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:kNdYIx-mwKoC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [
     "ehr"
    ],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "paper",
-   "recent": false
-  },
-  {
-   "scholar_id": "lr1JM5MAAAAJ:IjCSPb-OGe4C",
-   "title": "Continuous graphical models for static and dynamic distributions: Application to structural biology",
-   "authors_short": "NS Razavian",
-   "venue": "Carnegie Mellon University",
-   "year": 2013,
-   "citations": 2,
-   "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:IjCSPb-OGe4C",
-   "code": null,
-   "image": null,
-   "summary": "",
-   "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
-   "kind": "report",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:d1gkVwhDpl0C",
@@ -2730,7 +2843,8 @@
    ],
    "venue_full": "BMC Genomics",
    "pdf_url": "https://link.springer.com/content/pdf/10.1186/1471-2164-13-S1-S5.pdf",
-   "enriched_v": 1
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:abG-DnoFyZgC",
@@ -2741,13 +2855,12 @@
    "citations": 12,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:abG-DnoFyZgC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:qjMakFHDy7sC",
@@ -2758,13 +2871,11 @@
    "citations": 4,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:qjMakFHDy7sC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "report",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:9yKSN-GCB0IC",
@@ -2775,30 +2886,11 @@
    "citations": 12,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:9yKSN-GCB0IC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "report",
-   "recent": false
-  },
-  {
-   "scholar_id": "lr1JM5MAAAAJ:u5HHmVD_uO8C",
-   "title": "Fixed length word suffix for factored statistical machine translation",
-   "authors_short": "NS Razavian, S Vogel",
-   "venue": "Proceedings of the ACL 2010 Conference Short Papers, 147-150",
-   "year": 2010,
-   "citations": 10,
-   "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:u5HHmVD_uO8C",
-   "code": null,
-   "image": null,
-   "summary": "",
-   "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
-   "kind": "paper",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:2osOgNQ5qMEC",
@@ -2809,13 +2901,49 @@
    "citations": 7,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:2osOgNQ5qMEC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "openalex_id": "W804651016",
+   "doi": "10.1184/r1/6610919",
+   "abstract": "We introduce an algorithm for learning sparse, time-varying undirected probabilistic graphical models of Molecular Dynamics (MD) data. Our method computes a maximum a posteriori (MAP) estimate of the topology and parameters of the model (i.e., structure learning) using L1regularization of the negative log-likelihood (aka ‘Graphical Lasso’) to ensure sparsity, and a kernel to ensure smoothly varying topology and parameters over time. The learning problem is posed as a convex optimization problem and then solved optimally using block coordinate descent. The resulting model encodes the time-varying joint distribution over all the dihedral angles in the protein. We apply our method to three separate MD simulations of the enzyme Cyclophilin A, a peptidylprolyl isomerase. Each simulation models the isomerization of a different substrate. We compare and contrast the graphical models constructed from each data set, providing insights into the differences in the dynamics experienced by the enzyme for the different substrate.",
+   "authors": [
+    "Narges Razavian",
+    "Subhodeep Moitra",
+    "Hetunandan Kamisetty",
+    "Arvind Ramanathan",
+    "CHRISTOPHER JAMES LANGMEAD"
+   ],
+   "date": "2018-06-30",
+   "pdf_url": null,
+   "enriched_v": 1,
+   "code_v": 1
+  },
+  {
+   "scholar_id": "lr1JM5MAAAAJ:u5HHmVD_uO8C",
+   "title": "Fixed length word suffix for factored statistical machine translation",
+   "authors_short": "NS Razavian, S Vogel",
+   "venue": "Proceedings of the ACL 2010 Conference Short Papers, 147-150",
+   "year": 2010,
+   "citations": 10,
+   "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:u5HHmVD_uO8C",
+   "code": null,
+   "topics": [],
+   "enriched_at": "2026-10-17",
+   "kind": "paper",
+   "recent": false,
+   "openalex_id": "W2151395225",
+   "doi": null,
+   "abstract": "Factored Statistical Machine Translation ex-tends the Phrase Based SMT model by al-lowing each word to be a vector of factors. Experiments have shown effectiveness of many factors, including the Part of Speech tags in improving the grammaticality of the output. However, high quality part of speech taggers are not available in open domain for many languages. In this paper we used fixed length word suffix as a new factor in the Factored SMT, and were able to achieve significant improvements in three set of experiments: large NIST Arabic to English system, medium WMT Spanish to English system, and small TRANSTAC English to Iraqi system. 1",
+   "authors": [
+    "Narges Razavian",
+    "Stephan Vogel"
+   ],
+   "date": "2010-07-11",
+   "pdf_url": null,
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:Se3iqnhoufwC",
@@ -2838,7 +2966,8 @@
    ],
    "venue_full": "Proceedings of the 2009 international workshop on Intercultural collaboration",
    "pdf_url": null,
-   "enriched_v": 1
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:UebtZRa9Y70C",
@@ -2861,7 +2990,8 @@
    ],
    "venue_full": "Fifth International Conference on Information Technology: New Generations (itng 2008)",
    "pdf_url": null,
-   "enriched_v": 1
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:K3LRdlH-MEoC",
@@ -2872,15 +3002,14 @@
    "citations": 5,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:K3LRdlH-MEoC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [
     "nlp"
    ],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:hqOjcs7Dif8C",
@@ -2888,7 +3017,7 @@
    "authors_short": "M Keikha, NS Razavian, F Oroumchian, HS Razi",
    "venue": "Survey of text mining II: Clustering, classification, and retrieval, 219-232",
    "year": 2008,
-   "citations": 21,
+   "citations": 22,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:hqOjcs7Dif8C",
    "code": null,
    "topics": [
@@ -2907,7 +3036,8 @@
    ],
    "venue_full": "Survey of Text Mining II",
    "pdf_url": null,
-   "enriched_v": 1
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:W7OEmFMy1HYC",
@@ -2918,15 +3048,14 @@
    "citations": 20,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:W7OEmFMy1HYC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [
     "nlp"
    ],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:O3NaXMp0MMsC",
@@ -2937,13 +3066,12 @@
    "citations": 0,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:O3NaXMp0MMsC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:QIV2ME_5wuYC",
@@ -2967,7 +3095,8 @@
     "Edouard Pauwels"
    ],
    "pdf_url": null,
-   "enriched_v": 1
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:zA6iFVUQeVQC",
@@ -3005,7 +3134,8 @@
    "enriched_v": 1,
    "enriched_at": "2026-10-10",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:t6usbXjVLHcC",
@@ -3015,14 +3145,45 @@
    "year": null,
    "citations": 0,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:t6usbXjVLHcC",
-   "code": null,
-   "image": null,
-   "summary": "",
-   "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "code": "https://github.com/nyukat/COVID-19_prognosis",
+   "topics": [
+    "ehr",
+    "imaging"
+   ],
+   "enriched_at": "2026-10-17",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "openalex_id": "W3047296027",
+   "doi": "10.1038/s41746-021-00453-0",
+   "abstract": "During the coronavirus disease 2019 (COVID-19) pandemic, rapid and accurate triage of patients at the emergency department is critical to inform decision-making. We propose a data-driven approach for automatic prediction of deterioration risk using a deep neural network that learns from chest X-ray images and a gradient boosting model that learns from routine clinical variables. Our AI prognosis system, trained using data from 3,661 patients, achieves an area under the receiver operating characteristic curve (AUC) of 0.786 (95% CI: 0.745-0.830) when predicting deterioration within 96 hours. The deep neural network extracts informative areas of chest X-ray images to assist clinicians in interpreting the predictions and performs comparably to two radiologists in a reader study. In order to verify performance in a real clinical setting, we silently deployed a preliminary version of the deep neural network at New York University Langone Health during the first wave of the pandemic, which produced accurate predictions in real-time. In summary, our findings demonstrate the potential of the proposed system for assisting front-line physicians in the triage of COVID-19 patients.",
+   "authors": [
+    "Farah E. Shamout",
+    "Yiqiu Shen",
+    "Nan Wu",
+    "Aakash Kaku",
+    "Jungkyu Park",
+    "Taro Makino",
+    "Stanisław Jastrzȩbski",
+    "Jan Sylwester Witowski",
+    "Duo Wang",
+    "Ben Zhang",
+    "Siddhant Dogra",
+    "Meng Cao",
+    "Narges Razavian",
+    "David Kudlowitz",
+    "Lea Azour",
+    "William H. Moore",
+    "Yvonne W. Lui",
+    "Yindalon Aphinyanaphongs",
+    "Carlos Fernandez‐Granda",
+    "Krzysztof J. Geras"
+   ],
+   "date": "2021-05-12",
+   "venue_full": "npj Digital Medicine",
+   "pdf_url": "https://www.nature.com/articles/s41746-021-00453-0.pdf",
+   "arxiv": "2008.01774",
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:sSrBHYA8nusC",
@@ -3049,7 +3210,8 @@
    ],
    "venue_full": "ISMRM Annual Meeting",
    "pdf_url": null,
-   "enriched_v": 1
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:35N4QoGY0k4C",
@@ -3060,15 +3222,14 @@
    "citations": 0,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:35N4QoGY0k4C",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [
     "neuro"
    ],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:vV6vV6tmYwMC",
@@ -3079,15 +3240,14 @@
    "citations": 0,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:vV6vV6tmYwMC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [
     "neuro"
    ],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:lSLTfruPkqcC",
@@ -3098,13 +3258,12 @@
    "citations": 0,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:lSLTfruPkqcC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:MXK_kJrjxJIC",
@@ -3115,13 +3274,11 @@
    "citations": 0,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:MXK_kJrjxJIC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "report",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:8k81kl-MbHgC",
@@ -3132,13 +3289,12 @@
    "citations": 0,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:8k81kl-MbHgC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:5nxA0vEk-isC",
@@ -3149,13 +3305,12 @@
    "citations": 0,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:5nxA0vEk-isC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1,
+   "code_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:0EnyYjriUFMC",
@@ -3166,13 +3321,11 @@
    "citations": 0,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:0EnyYjriUFMC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "report",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1
   },
   {
    "scholar_id": "lr1JM5MAAAAJ:UeHWp8X0CEIC",
@@ -3183,13 +3336,12 @@
    "citations": 0,
    "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lr1JM5MAAAAJ&cstart=100&pagesize=100&sortby=pubdate&citation_for_view=lr1JM5MAAAAJ:UeHWp8X0CEIC",
    "code": null,
-   "image": null,
-   "summary": "",
    "topics": [],
-   "summary_source": null,
-   "enriched_at": "2026-10-10",
+   "enriched_at": "2026-10-17",
    "kind": "paper",
-   "recent": false
+   "recent": false,
+   "enriched_v": 1,
+   "code_v": 1
   }
  ]
 }

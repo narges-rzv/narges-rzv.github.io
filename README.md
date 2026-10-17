@@ -20,8 +20,11 @@ Edit any `.yml` file directly on GitHub (open it → pencil icon → *Commit cha
 2. Looks up every **new** paper on OpenAlex (falling back to Crossref) for its DOI, authors, PDF and arXiv links.
    Patents, conference abstracts, errata and tech reports are detected and hidden behind an
    "Abstracts & patents" toggle. Duplicate Scholar entries (preprint plus journal version) are merged.
-3. The **latest 10 papers** (`FEATURED_N` in the script) are shown as visual cards and also get:
-   - a released-code link (GitHub/GitLab/Hugging Face) found in the abstract or PDF,
+3. Every paper is searched once for a released-code link (GitHub/GitLab/Hugging Face): first the
+   abstract, then the open full text (Europe PMC, else the PDF), where the "Code availability"
+   statement usually names the repo. Links to tools the paper only builds on are skipped. A paper whose
+   full text isn't openly available can get its link via overrides.
+4. The **latest 10 papers** (`FEATURED_N` in the script) are shown as visual cards and also get:
    - a representative figure (arXiv HTML figure → "Figure 1" region of the PDF → largest image).
      Paywalled papers get a generated cover in their topic color, and you can add a figure via overrides,
    - a short summary: the opening sentences of the abstract.
